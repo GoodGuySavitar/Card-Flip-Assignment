@@ -98,7 +98,8 @@ public class GameManager : MonoBehaviour
             
             matchedPairs++;            
 
-            if (matchedPairs == totalPairs) // Check if all pairs are found
+            //END GAME SEQUENCE 
+            if (matchedPairs == totalPairs) 
             {
                 Debug.Log("GAMEOVER");
                 EndGame();
