@@ -1,2 +1,18 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude shader-related files from language stats
+**/*.shader linguist-detectable=false
+**/*.cginc linguist-detectable=false
+**/*.hlsl linguist-detectable=false
+**/*.compute linguist-detectable=false
+**/*.glsl linguist-detectable=false
+
+# Treat C# as the main language
+**/*.cs linguist-language=C#
+
+# Exclude common generated/third-party folders
+Assets/TextMesh?Pro/** linguist-generated
+Assets/Plugins/** linguist-generated
+Assets/ThirdParty/** linguist-generated
+Assets/Standard Assets/** linguist-generated
